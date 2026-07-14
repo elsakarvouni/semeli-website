@@ -733,6 +733,13 @@ h1, h2, h3 {
     }
 
     /* 2. Κείμενα Αρχικής (Hero) */
+
+    .hero-section {
+        background-attachment: scroll; /* Απενεργοποιεί το σταθερό background στα κινητά */
+        background-position: center center; /* Κεντράρει την εικόνα τέλεια */
+    }
+
+
     .hero-content h2 {
         font-size: 2rem; /* Μικραίνουμε τα τεράστια γράμματα για να μη σπάνε οι λέξεις */
         line-height: 1.2;
