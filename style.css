@@ -1,0 +1,810 @@
+/* =========================================
+   1. Γενικές Ρυθμίσεις (Reset & Typography)
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Κομψή γραμματοσειρά για τους τίτλους */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* =========================================
+   2. Κεντρικό Μενού Πλοήγησης (Navbar)
+   ========================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #2b2b2b;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Κρατάει την εικόνα και το κείμενο κολλητά στα αριστερά */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-logo-img {
+    height: 60px; /* Μέγεθος του εικονιδίου */
+    width: auto;
+}
+
+.logo h1 {
+    color: #cda873;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #cda873;
+}
+
+/* =========================================
+   Μενού Γλωσσών (Dropdown)
+   ========================================= */
+.lang-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Το αρχικό κουμπί */
+.lang-dropdown .dropbtn {
+    background-color: rgba(205, 168, 115, 0.1);
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #cda873;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Το κουτί με τις γλώσσες που είναι κρυμμένο αρχικά */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2b2b2b;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
+    z-index: 1002;
+    border-radius: 4px;
+    top: 100%; /* Εμφανίζεται ακριβώς από κάτω */
+    right: 0;  /* Στοίχιση στα δεξιά για να μην βγαίνει εκτός οθόνης */
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #f4f4f4 !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #444;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+/* Εφέ Hover: Όταν το ποντίκι πάει πάνω, εμφανίζεται η λίστα */
+.lang-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover,
+.lang-dropdown:hover .dropbtn {
+    background-color: #cda873;
+    color: #2b2b2b !important;
+}
+
+/* Ρύθμιση για τα εικονίδια των σημαιών στο Dropdown */
+.flag-icon {
+    width: 20px;
+    height: auto;
+    vertical-align: middle; /* Στοιχίζει την εικόνα στη μέση του κειμένου */
+    margin-right: 10px; /* Αφήνει λίγο κενό ανάμεσα στη σημαία και το κείμενο */
+    border-radius: 2px; /* Στρογγυλεύει ανεπαίσθητα τις γωνίες της σημαίας */
+}
+
+/* =========================================
+   3. Αρχική Ενότητα (Hero Section & Parallax)
+   ========================================= */
+.hero-section {
+    height: 100vh; /* Πιάνει όλο το ύψος της οθόνης */
+    margin-top: 0;
+
+    /* Background & Parallax Effect */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Κεντρικό Κουμπί (Button) */
+.btn {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: #5d6146; /* Το λαδί του μαγαζιού */
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border: 1px solid #5d6146;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s, border-color 0.3s;
+}
+
+.btn:hover {
+    background-color: transparent; /* Γίνεται διάφανο */
+    color: #cda873; /* Γράμματα χρυσά */
+    border-color: #cda873; /* Περίγραμμα χρυσό */
+    transform: translateY(-3px); /* Σηκώνεται ελαφρώς */
+}
+
+/* =========================================
+   4. Ενότητα Gallery (Slideshow Πιάτων)
+   ========================================= */
+.gallery-section {
+    padding: 80px 20px;
+    background-color: #fdfdfd;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Το δοχείο που "κρύβει" ό,τι βγαίνει εκτός οθόνης */
+.slider-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Η μπάρα που γλιστράει */
+.slider {
+    display: flex;
+    width: max-content; /* Πολύ σημαντικό: Του επιτρέπει να απλωθεί όσο χρειάζεται */
+    /* linear = πάει με σταθερή ταχύτητα | infinite = δεν σταματάει ποτέ */
+    animation: slideImages 60s linear infinite;
+}
+
+
+.slide-track {
+    display: flex;
+    gap: 30px; /* Η απόσταση μεταξύ των φωτογραφιών */
+    padding-right: 30px; /* Για να έχει κενό πριν ξεκινήσει το 2ο σετ */
+}
+
+/* Μεγαλώσαμε τις εικόνες */
+.slider img {
+    width: 360px;  /* Πιο φαρδιές για να χωράνε 3 με 4 στη σειρά */
+    height: 280px; /* Πιο ψηλές για να είναι χορταστικές */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Το Animation του ασταμάτητου κύκλου */
+@keyframes slideImages {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Μετακινείται ακριβώς στο 50% του πλάτους, κάνοντας αόρατη την εναλλαγή */
+}
+
+/* =========================================
+   4b. Ενότητα Επικοινωνία & Ώρες
+   ========================================= */
+.contact-page-content {
+    padding: 140px 20px 80px; /* Μεγάλο κενό πάνω για να μη κρύβεται από το Navbar */
+    background-color: #f4f1ea;
+    text-align: center;
+    min-height: 70vh;
+}
+
+.contact-page-content .section-title {
+    color: #2b2b2b;
+}
+
+.contact-map {
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 35px 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    text-align: left;
+}
+
+.contact-card h3 {
+    color: #5d6146;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-card h3 i {
+    color: #cda873;
+}
+
+.contact-card p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.contact-card a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-card a:hover {
+    color: #cda873;
+}
+
+.hours-list {
+    list-style: none;
+}
+
+.hours-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+.hours-list li:last-child {
+    border-bottom: none;
+}
+
+.hours-list li span:first-child {
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+.hours-list li span:last-child {
+    color: #5d6146;
+    font-weight: 700;
+}
+
+/* =========================================
+   5. Footer (Υποσέλιδο)
+   ========================================= */
+.site-footer {
+    background-color: #5d6146; /* Το σωστό λαδί χρώμα */
+    color: #f4f4f4;
+    padding: 70px 20px 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-column h3 {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.footer-column p {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-column a {
+    color: #f4f4f4;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #cda873;
+}
+
+.map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: 1px solid #f4f4f4;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.map-link:hover {
+    background-color: #cda873;
+    border-color: #cda873;
+    color: #2b2b2b !important;
+}
+
+.ta-logo-box {
+    background-color: white;
+    padding: 10px;
+    width: 140px;
+    margin: 0 auto 15px auto;
+    border-radius: 4px;
+}
+
+.ta-logo-box img {
+    width: 100%;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-bottom {
+    margin-top: 60px;
+    text-align: left;
+    padding-left: 5%;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* =========================================
+   7. Σελίδα Μενού (Tabs & Λίστες)
+   ========================================= */
+.menu-page-content {
+    min-height: 70vh;
+    padding: 140px 20px 80px; /* Μεγάλο κενό πάνω για να μη κρύβεται από το Navbar */
+    background-color: #fdfdfd;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-page-content .section-title {
+    text-align: center;
+    color: #2b2b2b;
+    margin-bottom: 30px;
+}
+
+/* Κουμπιά (Tabs) */
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Για τα κινητά */
+}
+
+.tab-btn {
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    background: transparent;
+    border: 2px solid #cda873; /* Το χρυσό σας χρώμα */
+    color: #2b2b2b;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.tab-btn.active, .tab-btn:hover {
+    background-color: #cda873;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Διάταξη των πιάτων (Masonry-style με CSS columns) */
+.menu-grid {
+    columns: 2;
+    column-gap: 60px;
+}
+
+/* Κάθε κατηγορία (π.χ. PIZZA, PASTA) γεμίζει τη στήλη της χωρίς να σπάει στη μέση */
+.menu-category {
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid; /* Συμβατότητα με παλιότερους browsers */
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* Τίτλοι Κατηγοριών (π.χ. PIZZA, PASTA) */
+.menu-category h3 {
+    color: #cda873;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+/* Εμφάνιση κάθε πιάτου */
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; /* Στοιχίζει τα γράμματα στη βάση τους */
+    margin-bottom: 5px;
+}
+
+.menu-item-header h4 {
+    font-size: 1.15rem;
+    color: #2b2b2b;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.price {
+    font-weight: bold;
+    color: #5d6146; /* Το λαδί του μαγαζιού για την τιμή */
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+
+.menu-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+    font-style: italic; /* Πλάγια γράμματα για τα υλικά */
+    line-height: 1.4;
+}
+
+/* Διαχωριστική γραμμή ανάμεσα σε "Ποτά" και "Wine List" */
+.menu-section-divider {
+    height: 2px;
+    max-width: 300px;
+    margin: 60px auto;
+    background: linear-gradient(to right, transparent, #cda873, transparent);
+}
+
+.menu-section-divider-thin {
+    max-width: 180px;
+    margin: 45px auto;
+    opacity: 0.7;
+}
+
+/* Λίγο επιπλέον κενό πάνω από τη λίστα κρασιών */
+.wine-list-grid {
+    margin-top: 10px;
+}
+
+/* Υπότιτλοι μέσα σε κατηγορία κρασιών (π.χ. Λευκοί / Ερυθροί / Ροζέ Οίνοι) */
+.wine-subtitle {
+    color: #5d6146;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin: 20px 0 12px;
+    text-transform: uppercase;
+}
+
+.wine-subtitle:first-of-type {
+    margin-top: 5px;
+}
+
+/* Σημείωση τιμών ποτήρι/φιάλη */
+.wine-columns-note {
+    font-size: 0.85rem;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* Ένδειξη "φιάλη 750ml" δίπλα στον τίτλο κατηγορίας */
+.wine-bottle-note {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75rem;
+    color: #999;
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+/* Κουτί με πρόσθετα υλικά πίτσας & σημειώσεις μενού (πιάνουν όλο το πλάτος) */
+.pizza-extras,
+.menu-notes {
+    column-span: all;
+    background-color: #f4f1ea;
+    border-radius: 8px;
+    padding: 25px 30px;
+    margin-bottom: 40px;
+}
+
+.pizza-extras h3,
+.menu-notes h3 {
+    font-size: 1.2rem;
+    border-bottom: none;
+    margin-bottom: 12px;
+}
+
+.extras-list,
+.notes-list {
+    font-size: 0.9rem;
+    color: #555;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+/* =========================================
+   8. Cookie Banner (GDPR)
+   ========================================= */
+.cookie-banner {
+    position: fixed;
+    bottom: -150px; /* Το έχουμε κρυμμένο αρχικά εκτός οθόνης */
+    left: 0;
+    width: 100%;
+    background-color: #2b2b2b; /* Σκούρο χρώμα Semeli */
+    color: #f4f4f4;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 9999; /* Να είναι πάντα πάνω από όλα */
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.3);
+    transition: bottom 0.6s ease-in-out; /* Ομαλή εμφάνιση από κάτω προς τα πάνω */
+    flex-wrap: wrap;
+}
+
+/* Όταν η JavaScript του δώσει την κλάση "show", ανεβαίνει στην οθόνη */
+.cookie-banner.show {
+    bottom: 0;
+}
+
+.cookie-banner p {
+    margin: 0;
+    font-size: 0.95rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Προσαρμογή στο κουμπί της μπάρας */
+.cookie-btn {
+    padding: 8px 25px;
+    font-size: 0.95rem;
+    background-color: #cda873; /* Χρυσό χρώμα */
+    border-color: #cda873;
+    color: #2b2b2b;
+}
+
+.cookie-btn:hover {
+    background-color: transparent;
+    color: #cda873;
+}
+
+
+/* Το εικονίδιο Hamburger (Κρυφό στους υπολογιστές) */
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    color: #cda873; /* Χρυσό χρώμα */
+    cursor: pointer;
+    z-index: 1001; /* Για να είναι πάντα πάνω από το ανοιχτό μενού */
+}
+
+/* =========================================
+   9. Προσαρμογή για Κινητά (Mobile Responsiveness)
+   ========================================= */
+@media (max-width: 768px) {
+
+    /* 1. Navbar στα κινητά: Λογότυπο κέντρο, 3 γραμμές αριστερά */
+    .navbar {
+        flex-direction: row; /* Τα βάζουμε στην ίδια ευθεία */
+        justify-content: center; /* Λογότυπο στο κέντρο */
+        align-items: center;
+        padding: 10px;
+        position: relative;
+    }
+
+    .hamburger {
+        display: block; /* Εμφανίζουμε τις 3 γραμμές */
+        position: absolute;
+        left: 20px; /* Το κολλάμε αριστερά! */
+    }
+
+    .logo {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        margin-bottom: 0; /* Βγάζουμε το κενό που είχαμε πριν */
+    }
+
+    /* Το Συρταρωτό Μενού (Sidebar) */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%; /* Αρχικά είναι κρυμμένο ΕΞΩ από την οθόνη αριστερά! */
+        width: 250px; /* Το πλάτος του συρταριού */
+        height: 100vh; /* Πιάνει όλο το ύψος της οθόνης */
+        background-color: #2b2b2b; /* Σκούρο φόντο Semeli */
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 100px; /* Κενό από πάνω */
+        transition: left 0.4s ease; /* Εφέ ομαλής κίνησης (γλίστρημα) */
+        box-shadow: 2px 0 15px rgba(0,0,0,0.5); /* Ωραία σκιά στα δεξιά του */
+        z-index: 1000;
+        gap: 30px;
+    }
+
+    /* Όταν η JavaScript προσθέσει την κλάση "active", το μενού μπαίνει στην οθόνη */
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+        color: #f4f4f4;
+    }
+
+    /* 2. Κείμενα Αρχικής (Hero) */
+    .hero-content h2 {
+        font-size: 2rem; /* Μικραίνουμε τα τεράστια γράμματα για να μη σπάνε οι λέξεις */
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0 10px; /* Δίνουμε λίγο "αέρα" δεξιά-αριστερά */
+    }
+
+    /* 3. Τίτλοι Ενοτήτων (π.χ. Το Μενού Μας) */
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    /* 4. Κουμπιά Μενού (Tabs) */
+    .menu-tabs {
+        flex-direction: column; /* Τα κουμπιά του μενού μπαίνουν το ένα κάτω από το άλλο */
+        padding: 0 20px;
+        gap: 10px;
+    }
+
+    .tab-btn {
+        width: 100%; /* Τα κουμπιά πιάνουν όλο το πλάτος της οθόνης */
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    /* 5. Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 6. Slider φωτογραφιών */
+    .slide-track {
+        gap: 15px;
+    }
+    .slider img {
+        width: 260px;
+        height: 200px;
+    }
+
+    /* 7. Contact section */
+    .contact-card {
+        text-align: center;
+    }
+
+    .hours-list li {
+        flex-direction: column;
+        gap: 3px;
+        text-align: center;
+    }
+
+    /* 8. Menu grid: μία στήλη στα κινητά */
+    .menu-grid {
+        columns: 1;
+    }
+
+    /* Προσαρμογή Dropdown στα Κινητά */
+    .dropdown-content {
+        position: static; /* Για να σπρώχνει τα άλλα στοιχεία προς τα κάτω */
+        box-shadow: none;
+        background-color: transparent;
+        text-align: center;
+        min-width: 100%;
+        margin-top: 10px;
+    }
+}

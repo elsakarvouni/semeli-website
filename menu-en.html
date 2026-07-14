@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Semeli Italian Cuisine</title>
+
+    <!-- Basic Meta Tags for SEO -->
+    <meta name="description" content="Discover the menu of Semeli Italian Cuisine. Delicious pizza, authentic pasta, refreshing cocktails, and premium wine options in Igoumenitsa.">
+    <meta name="keywords" content="menu, Italian restaurant, pizza, pasta, cocktails, Semeli Italian Cuisine, food">
+    <meta name="author" content="Semeli Italian Cuisine">
+
+    <!-- Open Graph Meta Tags (For Facebook, Viber, Instagram etc.) -->
+    <meta property="og:title" content="Our Menu | Semeli Italian Cuisine">
+    <meta property="og:description" content="See our dishes and drinks in detail. Made with passion and authentic Italian ingredients.">
+    <meta property="og:image" content="images/semeli_logo.png">
+    <meta property="og:url" content="https://www.to-domain-sou.gr/menu-en.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/semeli_logo.png">
+
+    <!-- Connection with CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Main Navigation Bar (Navbar) -->
+    <header class="navbar">
+        <!-- Hamburger Icon (3 lines) -->
+        <div class="hamburger" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="logo">
+            <img src="images/semeli_logo.png" alt="Semeli Logo" class="nav-logo-img">
+            <h1>Semeli Italian Cuisine</h1>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index-en.html">Home</a></li>
+                <li><a href="menu-en.html">Menu</a></li>
+                <li><a href="contact-en.html">Contact</a></li>
+                <li class="lang-dropdown">
+                    <a href="#" class="dropbtn"><i class="fas fa-globe"></i> EN <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="menu.html"><img src="https://flagcdn.com/w20/gr.png" alt="Greek Flag" class="flag-icon"> Ελληνικά (EL)</a>
+                        <a href="menu-en.html"><img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" class="flag-icon"> English (EN)</a>
+                        <a href="menu-it.html"><img src="https://flagcdn.com/w20/it.png" alt="Italian Flag" class="flag-icon"> Italiano (IT)</a>
+                    </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+    <!-- ========================================== -->
+    <!-- ΕΝΟΤΗΤΑ ΜΕΝΟΥ (ΦΑΓΗΤΟ & ΠΟΤΟ)              -->
+    <!-- ========================================== -->
+    <section class="menu-page-content">
+
+        <h2 class="section-title">OUR MENU</h2>
+
+        <!-- Κουμπιά Επιλογής (Tabs) -->
+        <div class="menu-tabs">
+            <button class="tab-btn active" onclick="openMenu('food', event)">FOOD MENU</button>
+            <button class="tab-btn" onclick="openMenu('drinks', event)">DRINKS MENU</button>
+        </div>
+
+        <!-- 1. ΜΕΝΟΥ ΦΑΓΗΤΟΥ -->
+        <div id="food" class="menu-wrapper active-menu">
+            <div class="menu-grid">
+
+                <!-- Κατηγορία: ANTIPASTI -->
+                <div class="menu-category">
+                    <h3>ANTIPASTI</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Bruschetta Pesto</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                        <p>mozzarella, pesto, cherry tomatoes</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Bruschetta Pomodoro</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                        <p>tomato, garlic, parsley</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Funghi al Vino Bianco</h4>
+                            <span class="price">8,50€</span>
+                        </div>
+                        <p>mushrooms, wine, lemon, thyme</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Funghi alla Crema</h4>
+                            <span class="price">8,90€</span>
+                        </div>
+                        <p>mushrooms with parmesan cream and bacon</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Patate Fritte</h4>
+                            <span class="price">4,50€</span>
+                        </div>
+                        <p>french fries</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Patate Dolce</h4>
+                            <span class="price">5,50€</span>
+                        </div>
+                        <p>fried sweet potatoes</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Verdure alla Griglia</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>halloumi cheese, grilled vegetables, pesto</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Assortimento di Formaggi e Salumi</h4>
+                            <span class="price">12,90€</span>
+                        </div>
+                        <p>prosciutto, peppered air-dried salami, parmesan, manouri cheese, graviera cheese, rose chutney, breadsticks</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Foccacia</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                        <p>focaccia with olive oil, thyme, garlic</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Carpaccio</h4>
+                            <span class="price">11,50€</span>
+                        </div>
+                        <p>beef fillet, aged balsamic, arugula, parmesan, pine nuts</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Canelloni di Melanzane</h4>
+                            <span class="price">9,50€</span>
+                        </div>
+                        <p>eggplant roll with cheeses, basil, and tomato sauce</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: INSALATA -->
+                <div class="menu-category">
+                    <h3>INSALATA</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Insalata Verde con Aceto Balsamico</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>mesclun salad, grilled manouri cheese, cranberries, walnuts, pasteli (sesame honey bar), balsamic dressing</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Caesar con Pollo</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>grilled chicken, iceberg lettuce, bacon, croutons, caesar dressing, parmesan</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Burrata di Bufala</h4>
+                            <span class="price">14,50€</span>
+                        </div>
+                        <p>buffalo burrata 200 gr., cherry tomatoes, pesto, arugula, aged balsamic</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Insalata di Passione</h4>
+                            <span class="price">11,50€</span>
+                        </div>
+                        <p>beetroot salad, spinach, xinomyzithra (sour cheese), walnut, and sour apple</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Greca</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>cherry tomatoes, cucumber, pepper, pickled onion, carob, olives, feta cheese, capers</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Caprese</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>mozzarella, tomato, basil</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: PIZZA -->
+                <div class="menu-category">
+                    <h3>PIZZA</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Margarita</h4>
+                            <span class="price">9,50€</span>
+                        </div>
+                        <p>tomato sauce, mozzarella, basil</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pepperoni</h4>
+                            <span class="price">11,50€</span>
+                        </div>
+                        <p>tomato sauce, mozzarella, pepperoni salami, parmesan</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Speciale</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>tomato sauce, mozzarella, ham, bacon, pepperoni, pepper, mushrooms</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pesto</h4>
+                            <span class="price">12,50€</span>
+                        </div>
+                        <p>tomato sauce, mozzarella, bocconcini, pesto, cherry tomatoes, basil</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Semeli Tartufatta</h4>
+                            <span class="price">14,50€</span>
+                        </div>
+                        <p>mushroom cream, mozzarella, mushrooms, caramelized onion, and truffle oil</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Greca</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>tomato sauce, mozzarella, pepper, tomato, onion, olives, feta cheese, oregano</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Al Tonno</h4>
+                            <span class="price">12,50€</span>
+                        </div>
+                        <p>tomato sauce, mozzarella, smoked tuna, onion, cherry tomatoes</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Prosciutto</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>tomato sauce, mozzarella, prosciutto, parmesan, arugula</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>BBQ Polo</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>tomato sauce, mozzarella, bacon, chicken, corn, bbq sauce</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Carbonara</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>cream, mozzarella, bacon, corn</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Verdure</h4>
+                            <span class="price">11,50€</span>
+                        </div>
+                        <p>tomato sauce, mozzarella, grilled vegetables</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Caprese</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>tomato sauce, bocconcini, fresh basil, olive oil</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Mortadella e Burrata</h4>
+                            <span class="price">16,50€</span>
+                        </div>
+                        <p>mortadella, buffalo burrata, and pistachios (Aegina pistachios)</p>
+                    </div>
+                </div>
+
+                <!-- Πρόσθετα υλικά πίτσας -->
+                <div class="menu-category pizza-extras">
+                    <h3>ADD EXTRA TOPPINGS TO YOUR PIZZA</h3>
+                    <p class="extras-list">
+                        Mushrooms 0,70 / Ham 0,70 / Salami 0,70 / Bacon 0,70 / Pepper 0,50 /
+                        Onion 0,50 / Corn 0,50 / Cherry tomatoes 0,50 / Olives 0,50 /
+                        Prosciutto 1,50 / Tuna 2,00 / Chicken 1,50 / Cheese 1,00 / Feta cheese 1,00 / Burrata 8,50
+                    </p>
+                </div>
+
+                <!-- Κατηγορία: PASTA -->
+                <div class="menu-category">
+                    <h3>PASTA</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Spaghetti Ragù alla Bolognese</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>beef ragout with san marzano tomato and vegetables</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Spaghetti alla Napoletana</h4>
+                            <span class="price">8,50€</span>
+                        </div>
+                        <p>san marzano tomato sauce</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Spaghetti con Aglio, Olio e Peperoncino</h4>
+                            <span class="price">9,50€</span>
+                        </div>
+                        <p>spaghetti with garlic, olive oil, and hot pepper</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Penne Crema di Pancetta Affumicata</h4>
+                            <span class="price">12,50€</span>
+                        </div>
+                        <p>chicken, smoked bacon cream, and parmesan</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Paccheri Ragù Bianco</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>beef cheek cooked with cream</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Ravioli ai Funghi e Tartufo</h4>
+                            <span class="price">14,00€</span>
+                        </div>
+                        <p>handmade ravioli and truffle cream</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Rigatoni al Forno</h4>
+                            <span class="price">11,50€</span>
+                        </div>
+                        <p>oven-baked with tomato sauce, bacon, pepper, spring onion, and mozzarella</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Carbonara</h4>
+                            <span class="price">11,50€</span>
+                        </div>
+                        <p>egg yolk, parmesan, and smoked pancetta</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Papardelle con Carne</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>pork fillet, porcini mushrooms, spinach</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Spaghetti con Gamberi</h4>
+                            <span class="price">14,50€</span>
+                        </div>
+                        <p>tomato sauce, bisque, shrimp</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Orzo con Gamberi</h4>
+                            <span class="price">15,50€</span>
+                        </div>
+                        <p>orzo, shrimp, leek, tomato, feta cheese</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Orzo con Verdure</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>orzo, grilled vegetables, tomato sauce</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Spaghetti alla Greca</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>tomato sauce, pepper, onion, olives, feta cheese</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: RISSOTI & GNOCCHI -->
+                <div class="menu-category">
+                    <h3>RISSOTI &amp; GNOCCHI</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Gnocchi al Gorgonzola e Mela</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>gorgonzola cream, gnocchi, apple compote, walnut</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Risotto ai Funghi</h4>
+                            <span class="price">15,50€</span>
+                        </div>
+                        <p>wild mushrooms, parmesan, butter</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Risotto con Guancia di Manzo</h4>
+                            <span class="price">16,50€</span>
+                        </div>
+                        <p>braised beef cheek, red wine, parmesan, butter</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: CARNE -->
+                <div class="menu-category">
+                    <h3>CARNE</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Hamburger Semeli</h4>
+                            <span class="price">12,50€</span>
+                        </div>
+                        <p>beef patty, cheddar cheese, tomato, lettuce, bacon, caramelized onions &amp; mushrooms, pickled cucumber, bbq sauce</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pollo alla Grillia</h4>
+                            <span class="price">14,50€</span>
+                        </div>
+                        <p>grilled chicken fillet with grilled vegetables</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Filetto di Maiale con Porcini</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>pork tenderloin, mushroom sauce, french fries</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tagliata di Manzo con Gremolata e Verdure Grigliate</h4>
+                            <span class="price">22,50€</span>
+                        </div>
+                        <p>beef tagliata 300 gr., salsa verde, grilled vegetables</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Schnitzel με Πατάτες</h4>
+                            <span class="price">12,50€</span>
+                        </div>
+                        <p>chicken schnitzel with french fries</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Rib-eye Argentina Steak 250γρ. con Patate Dolce</h4>
+                            <span class="price">31,50€</span>
+                        </div>
+                        <p>rib-eye 250 gr., sweet potato, BBQ</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Filetto di Manzo con Patate Dolce</h4>
+                            <span class="price">26,50€</span>
+                        </div>
+                        <p>beef fillet 200gr., sweet potato, BBQ</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: MENU PER BAMBINI -->
+                <div class="menu-category">
+                    <h3>MENU PER BAMBINI</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Hamburger</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                        <p>beef patty, ketchup, mustard</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pennettine Napolitane</h4>
+                            <span class="price">4,50€</span>
+                        </div>
+                        <p>with tomato sauce &amp; parmesan</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Crocchette di Pollo</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                        <p>chicken nuggets with french fries</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: DOLCI -->
+                <div class="menu-category">
+                    <h3>DOLCI</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Panna Cotta</h4>
+                            <span class="price">4,50€</span>
+                        </div>
+                        <p>with fresh fruits</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tiramisu</h4>
+                            <span class="price">5,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Affogato al Caffè con Carammello e Cioccolato</h4>
+                            <span class="price">10,00€</span>
+                        </div>
+                        <p>for 2 persons</p>
+                    </div>
+                </div>
+
+                <!-- Επιπλέον σημειώσεις -->
+                <div class="menu-category menu-notes">
+                    <h3>NOTES</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Bread</h4>
+                            <span class="price">1,00€</span>
+                        </div>
+                    </div>
+
+                    <p class="notes-list">
+                        Ask us for dishes of the day.<br>
+                        Please inform us of any allergies.<br>
+                        Pasta gluten free to order.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 2. ΜΕΝΟΥ ΠΟΤΩΝ -->
+        <div id="drinks" class="menu-wrapper" style="display: none;">
+
+            <!-- 2α. ΠΟΤΑ / ΑΝΑΨΥΚΤΙΚΑ / ΜΠΥΡΕΣ κλπ. -->
+            <div class="menu-grid">
+
+                <!-- Κατηγορία: ΑΠΕΡΙΤΙΦ -->
+                <div class="menu-category">
+                    <h3>APERITIFS</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Ouzo / Tsipouro</h4>
+                            <span class="price">3,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Campari</h4>
+                            <span class="price">3,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Prosecco</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Moscato d'Asti</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: COCKTAILS -->
+                <div class="menu-category">
+                    <h3>COCKTAILS</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Margarita</h4>
+                            <span class="price">9,00€</span>
+                        </div>
+                        <p>tequila, triple sec, lime juice</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Caipirinha</h4>
+                            <span class="price">9,00€</span>
+                        </div>
+                        <p>cachaca, lime, sugar</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Aperol Spritz</h4>
+                            <span class="price">7,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Negroni</h4>
+                            <span class="price">8,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Daiquiri</h4>
+                            <span class="price">9,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Mojito</h4>
+                            <span class="price">8,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Mocktail Alcohol Free</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΑΝΑΨΥΚΤΙΚΑ -->
+                <div class="menu-category">
+                    <h3>Soft Drinks</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Coca Cola / Coca Cola Zero</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Orangeade</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Lemonade</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Sprite</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Water Soda</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pink Soda</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tonic Water</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Sparkling Water</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Juices by the glass</h4>
+                            <span class="price">3,50€</span>
+                        </div>
+                        <p>Sour cherry, mixed</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Natural mineral water 0.50 L</h4>
+                            <span class="price">0,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Natural mineral water 1L</h4>
+                            <span class="price">1,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pelegrino 0,75L</h4>
+                            <span class="price">4,50€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΜΠΥΡΕΣ ΣΕ ΒΑΡΕΛΙ -->
+                <div class="menu-category">
+                    <h3>Draft Beers</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Alfa</h4>
+                            <span class="price">3,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Heineken</h4>
+                            <span class="price">4,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΦΙΑΛΕΣ -->
+                <div class="menu-category">
+                    <h3>Bottled Beers</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Amstel</h4>
+                            <span class="price">3,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Alfa Weiss</h4>
+                            <span class="price">5,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Amstel Radler Lemon</h4>
+                            <span class="price">3,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Amstel Free</h4>
+                            <span class="price">3,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Mamos</h4>
+                            <span class="price">4,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Peroni</h4>
+                            <span class="price">5,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Fischer</h4>
+                            <span class="price">5,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΛΙΚΕΡ -->
+                <div class="menu-category">
+                    <h3>Liqueurs</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Amaretto</h4>
+                            <span class="price">6,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Averna Amaro</h4>
+                            <span class="price">5,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Ramazzoti</h4>
+                            <span class="price">5,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Mastiha</h4>
+                            <span class="price">4,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Limoncello</h4>
+                            <span class="price">4,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Long Drinks</h4>
+                            <span class="price">7,50€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΟΥΙΣΚΙ -->
+                <div class="menu-category">
+                    <h3>WHISKEY</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Jameson</h4>
+                            <span class="price">7,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Johnnie Walker Red</h4>
+                            <span class="price">7,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Haig</h4>
+                            <span class="price">7,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΟΥΙΣΚΙ ΣΠΕΣΙΑΛ -->
+                <div class="menu-category">
+                    <h3>SPECIAL WHISKEY</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Chivas</h4>
+                            <span class="price">8,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Johnnie Walker Black</h4>
+                            <span class="price">8,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Lagavulin</h4>
+                            <span class="price">14,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΤΖΙΝ -->
+                <div class="menu-category">
+                    <h3>GIN</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Beefeater</h4>
+                            <span class="price">7,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tanqueray</h4>
+                            <span class="price">8,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΒΟΤΚΑ -->
+                <div class="menu-category">
+                    <h3>VODKA</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Absolut</h4>
+                            <span class="price">7,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Belvedere</h4>
+                            <span class="price">12,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΤΕΚΙΛΑ -->
+                <div class="menu-category">
+                    <h3>TEQUILA</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Olmega White / Yellow</h4>
+                            <span class="price">6,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΡΟΥΜΙ -->
+                <div class="menu-category">
+                    <h3>RUM</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Havana Reserva</h4>
+                            <span class="price">7,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Havana 3</h4>
+                            <span class="price">6,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Don Papa Rum</h4>
+                            <span class="price">12,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΚΑΦΕΔΕΣ -->
+                <div class="menu-category">
+                    <h3>COFFEES</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Espresso</h4>
+                            <span class="price">2,50€</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Τέλος 2α -->
+
+            <!-- Διαχωριστική γραμμή -->
+            <div class="menu-section-divider"></div>
+
+            <!-- 2β. WINE LIST -->
+            <div class="menu-grid wine-list-grid">
+
+                <!-- Κατηγορία: ΚΡΑΣΙΑ ΣΕ ΠΟΤΗΡΙ -->
+                <div class="menu-category wine-by-glass">
+                    <h3>WINES IN A GLASS</h3>
+                    <p class="wine-columns-note">price glass 150ml / bottle 750ml</p>
+
+                    <h4 class="wine-subtitle">White wines</h4>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Gefyra, Lykos Winery</h4>
+                            <span class="price">4,50€ / 19,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Giorti, Semeli Estate</h4>
+                            <span class="price">4,50€ / 19,50€</span>
+                        </div>
+                        <p>100% moschofilero</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Gitane, Malagouzia</h4>
+                            <span class="price">6,50€ / 28,00€</span>
+                        </div>
+                        <p>100% malagouzia</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Lazaridis, Chrisos Leon</h4>
+                            <span class="price">6,50€ / 29,00€</span>
+                        </div>
+                        <p>100% chardonnay</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Orivatis, Sauvignon Blanc</h4>
+                            <span class="price">6,50€ / 28,00€</span>
+                        </div>
+                        <p>sauvignon blanc</p>
+                    </div>
+
+                    <h4 class="wine-subtitle">Red wines</h4>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Gefyra, Lykos Winery</h4>
+                            <span class="price">4,80€ / 19,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Portes, Skouras Estate</h4>
+                            <span class="price">6,50€ / 32,00€</span>
+                        </div>
+                        <p>merlot</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Lazaridis, Chrisos Leon</h4>
+                            <span class="price">6,50€ / 33,00€</span>
+                        </div>
+                        <p>cabernet sauvignon</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Paranga, Kyr-Yianni Estate</h4>
+                            <span class="price">6,00€ / 28,00€</span>
+                        </div>
+                        <p>merlot, syrah, xinomavro</p>
+                    </div>
+
+                    <h4 class="wine-subtitle">Rose wines</h4>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Semi-sweet Rose (Tyrnavou)</h4>
+                            <span class="price">4,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Simio Stixis, Boutaris</h4>
+                            <span class="price">6,50€ / 34,00€</span>
+                        </div>
+                        <p>cabernet sauvignon - moschofilero</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Τέλος 2β: κρασιά διαθέσιμα σε ποτήρι + φιάλη -->
+
+            <!-- Διαχωριστική γραμμή -->
+            <div class="menu-section-divider menu-section-divider-thin"></div>
+
+            <!-- 2γ. ΚΡΑΣΙΑ ΜΟΝΟ ΣΕ ΦΙΑΛΗ 750ML -->
+            <div class="menu-grid wine-list-grid">
+
+                <!-- Κατηγορία: ΛΕΥΚΟΙ ΟΙΝΟΙ (ΦΙΑΛΗ 750ML) -->
+                <div class="menu-category">
+                    <h3>WHITE WINES <span class="wine-bottle-note">bottle 750ml</span></h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Paranga, Kir-Yianni Estate</h4>
+                            <span class="price">28,50€</span>
+                        </div>
+                        <p>roditis, malagousia</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Mega Spileo Estate</h4>
+                            <span class="price">32,00€</span>
+                        </div>
+                        <p>assyrtiko</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Wine Art Estate, Idisma Drios</h4>
+                            <span class="price">44,00€</span>
+                        </div>
+                        <p>barrel-aged chardonnay</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Karipidis Estate, Sauvignon Blanc</h4>
+                            <span class="price">34,00€</span>
+                        </div>
+                        <p>sauvignon blanc</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Kir-Yianni Estate</h4>
+                            <span class="price">28,00€</span>
+                        </div>
+                        <p>malagousia-roditis</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Biblia Chora Estate</h4>
+                            <span class="price">36,00€</span>
+                        </div>
+                        <p>sauvignon blanc-assyrtiko</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Gerovassiliou Estate</h4>
+                            <span class="price">58,00€</span>
+                        </div>
+                        <p>viogner</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΕΡΥΘΡΟΙ ΟΙΝΟΙ (ΦΙΑΛΗ 750ML) -->
+                <div class="menu-category">
+                    <h3>RED WINES <span class="wine-bottle-note">bottle 750ml</span></h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Kratistos, Lykos Winery</h4>
+                            <span class="price">32,50€</span>
+                        </div>
+                        <p>agiorgitiko</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Alpha Estate, Xinomavro</h4>
+                            <span class="price">36,00€</span>
+                        </div>
+                        <p>xinomavro</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Gerovassiliou Estate</h4>
+                            <span class="price">39,00€</span>
+                        </div>
+                        <p>merlot, syrah, limnio</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Kokkinomilos, Tselepos Estate</h4>
+                            <span class="price">59,00€</span>
+                        </div>
+                        <p>merlot</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Karipidis, Rilancio</h4>
+                            <span class="price">39,00€</span>
+                        </div>
+                        <p>nebbiolo</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΑΦΡΩΔΕΙΣ ΟΙΝΟΙ -->
+                <div class="menu-category">
+                    <h3>SPARKLING WINES</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Prosecco</h4>
+                            <span class="price">28,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Champagne Moët &amp; Chandon</h4>
+                            <span class="price">120,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΡΟΖΕ ΟΙΝΟΙ (ΦΙΑΛΗ 750ML) -->
+                <div class="menu-category">
+                    <h3>ROSE WINES <span class="wine-bottle-note">bottle 750ml</span></h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Dafnios, Douloufakis Winery</h4>
+                            <span class="price">29,00€</span>
+                        </div>
+                        <p>liatiko, vidiano</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>La Tour Melas Nautilus</h4>
+                            <span class="price">32,00€</span>
+                        </div>
+                        <p>syrah-grenache rouge-Agiorgitiko</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Domaine Costa Lazaridis Rose</h4>
+                            <span class="price">39,00€</span>
+                        </div>
+                        <p>grenache rouge-merlot-Agiorgitiko</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    </main>
+
+    <!-- Footer (Υποσέλιδο) -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>ADDRESS</h3>
+                <p>El. Venizelou 4,<br>Igoumenitsa 461 00, Greece</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Semeli+Italian+Cuisine+Igoumenitsa" target="_blank" class="map-link">
+                    <i class="fas fa-map-marker-alt"></i> View on map
+                </a>
+            </div>
+            <div class="footer-column">
+                <h3>PHONE</h3>
+                <p><a href="tel:+302665028102" style="text-decoration: none;">+30 2665 028102</a></p>
+                <p><a href="tel:+306941442862" style="text-decoration: none;">+30 6941442862</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>EMAIL</h3>
+                <p><a href="mailto:info@semeli-winebar.gr" style="text-decoration: none;">info@semeli-winebar.gr</a></p>
+            </div>
+            <div class="footer-column tripadvisor">
+                <h3>TRIPADVISOR</h3>
+                <div class="ta-logo-box">
+                    <a href="https://www.tripadvisor.com.gr/Restaurant_Review-g735758-d12672404-Reviews-Semeli_Italian_Cuisine-Igoumenitsa_Thesprotia_Region_Epirus.html" target="_blank">
+                        <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="Tripadvisor">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column social">
+                <h3>FOLLOW US</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/semeliigoumenitsa/?locale=el_GR" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/semeli_italian_cuisine/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Semeli Italian Cuisine</p>
+        </div>
+    </footer>
+
+    <div class="cookie-banner" id="cookie-banner">
+        <p>This website uses cookies to ensure you get the best experience on our website.</p>
+        <button class="btn cookie-btn" id="accept-cookies">Got it</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

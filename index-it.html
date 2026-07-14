@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semeli Italian Cuisine</title>
+
+    <!-- Basic Meta Tags for SEO (Italian) -->
+    <meta name="description" content="Benvenuti da Semeli Italian Cuisine. Gustate sapori italiani autentici, pasta fresca e pizza nel cuore di Igoumenitsa.">
+    <meta name="keywords" content="ristorante italiano, pizza, pasta, cibo Igoumenitsa, Semeli Italian Cuisine, ristorante, vino">
+    <meta name="author" content="Semeli Italian Cuisine">
+
+    <!-- Open Graph Meta Tags (Italian) -->
+    <meta property="og:title" content="Semeli Italian Cuisine | Sapori Italiani Autentici">
+    <meta property="og:description" content="Venite a scoprire i nostri piatti deliziosi, preparati con ingredienti genuini e temperamento italiano a Igoumenitsa.">
+    <meta property="og:image" content="images/semeli_logo.png">
+    <meta property="og:url" content="https://www.to-domain-sou.gr/index-it.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/semeli_logo.png">
+    
+    <!-- Connection with CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Main Navigation Bar (Navbar) -->
+    <header class="navbar">
+        <!-- Hamburger Icon (3 lines) for Mobile -->
+        <div class="hamburger" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <img src="images/semeli_logo.png" alt="Semeli Logo" class="nav-logo-img">
+            <h1>Semeli Italian Cuisine</h1>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index-it.html">Home</a></li>
+                <li><a href="menu-it.html">Menu</a></li>
+                <li><a href="contact-it.html">Contatti</a></li>
+                
+                <!-- Αναδυόμενο Μενού Γλωσσών (Dropdown) -->
+                <li class="lang-dropdown">
+                    <a href="#" class="dropbtn"><i class="fas fa-globe"></i> IT <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html"><img src="https://flagcdn.com/w20/gr.png" alt="Greek Flag" class="flag-icon"> Ελληνικά (EL)</a>
+                        <a href="index-en.html"><img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" class="flag-icon"> English (EN)</a>
+                        <a href="index-it.html"><img src="https://flagcdn.com/w20/it.png" alt="Italian Flag" class="flag-icon"> Italiano (IT)</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Sapori Italiani Autentici</h2>
+            <p>Viaggia in Italia attraverso i nostri piatti, preparati con amore e ingredienti freschi.</p>
+            <a href="menu-it.html" class="btn">Vedi il Menu</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section (Slideshow) -->
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title">I Nostri Piatti</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <!-- FIRST TRACK OF IMAGES -->
+                <div class="slide-track">
+                    <img src="images/IMG_5768.jpeg" alt="Pasta">
+                    <img src="images/IMG_7288.jpg" alt="Pasta">
+                    <img src="images/00AC6937-C7F2-4E8B-8669-8A22DCA56BB1.JPG" alt="Pasta" width="400" height="300">
+                    <img src="images/4E5E034F-E769-4BCF-AC72-E2CAF7D9C7D5.JPG" alt="Pasta" width="400" height="300">
+                    <img src="images/F8760A1E-CD0F-469B-B9B3-5906436D380F.JPG" alt="Pizza" width="400" height="300">
+                    <img src="images/BF5A7635-1DA6-46C3-9C09-7C48FF181BB7.JPG" alt="Meat" width="400" height="300">
+                    <img src="images/103C71A8-1F58-4A99-832E-3459C56460A1.JPG" alt="Meat" width="400" height="300">
+                    <img src="images/56EBEF45-6327-42DA-AB67-C9C15F0851B1.JPG" alt="Risotto" width="400" height="300">
+                    <img src="images/85BF1535-2D6F-48D9-8D1F-05E8914481B1.JPG" alt="Salad" width="400" height="300">
+                    <img src="images/13F76A33-3AC0-4047-BD4B-63430B5C3706.JPG" alt="Dessert" width="400" height="300">
+                    <img src="images/1B44573A-2302-443C-9246-C5E3B26DBE39.JPG" alt="Risotto" width="400" height="300">
+                </div>
+                <!-- SECOND TRACK OF IMAGES FOR INFINITE LOOP -->
+                <div class="slide-track">
+                    <img src="images/IMG_5768.jpeg" alt="Pasta">
+                    <img src="images/IMG_7288.jpg" alt="Pasta">
+                    <img src="images/00AC6937-C7F2-4E8B-8669-8A22DCA56BB1.JPG" alt="Pasta" width="400" height="300">
+                    <img src="images/4E5E034F-E769-4BCF-AC72-E2CAF7D9C7D5.JPG" alt="Pasta" width="400" height="300">
+                    <img src="images/F8760A1E-CD0F-469B-B9B3-5906436D380F.JPG" alt="Pizza" width="400" height="300">
+                    <img src="images/BF5A7635-1DA6-46C3-9C09-7C48FF181BB7.JPG" alt="Meat" width="400" height="300">
+                    <img src="images/103C71A8-1F58-4A99-832E-3459C56460A1.JPG" alt="Meat" width="400" height="300">
+                    <img src="images/56EBEF45-6327-42DA-AB67-C9C15F0851B1.JPG" alt="Risotto" width="400" height="300">
+                    <img src="images/85BF1535-2D6F-48D9-8D1F-05E8914481B1.JPG" alt="Salad" width="400" height="300">
+                    <img src="images/13F76A33-3AC0-4047-BD4B-63430B5C3706.JPG" alt="Dessert" width="400" height="300">
+                    <img src="images/1B44573A-2302-443C-9246-C5E3B26DBE39.JPG" alt="Risotto" width="400" height="300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>INDIRIZZO</h3>
+                <p>
+                    El. Venizelou 4,<br>
+                    Igoumenitsa 461 00, Grecia
+                </p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Semeli+Italian+Cuisine+Igoumenitsa" target="_blank" class="map-link">
+                    <i class="fas fa-map-marker-alt"></i> Vedi sulla mappa
+                </a>
+            </div>
+
+            <div class="footer-column">
+                <h3>TELEFONO</h3>
+                <p><a href="tel:+302665028102" style="text-decoration: none;">+30 2665 028102</a></p>
+                <p><a href="tel:+306941442862" style="text-decoration: none;">+30 6941442862</a></p>
+            </div>
+
+            <div class="footer-column">
+                <h3>EMAIL</h3>
+                <p><a href="mailto:info@semeli-winebar.gr" style="text-decoration: none;">info@semeli-winebar.gr</a></p>
+            </div>
+
+            <div class="footer-column tripadvisor">
+                <h3>TRIPADVISOR</h3>
+                <div class="ta-logo-box">
+                    <a href="https://www.tripadvisor.com.gr/Restaurant_Review-g735758-d12672404-Reviews-Semeli_Italian_Cuisine-Igoumenitsa_Thesprotia_Region_Epirus.html" target="_blank">
+                        <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="Tripadvisor">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-column social">
+                <h3>SEGUICI</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/semeliigoumenitsa/?locale=el_GR" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/semeli_italian_cuisine/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Semeli Italian Cuisine</p>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner (GDPR) -->
+    <div class="cookie-banner" id="cookie-banner">
+        <p>Questo sito utilizza i cookie per offrirti la migliore esperienza di navigazione.</p>
+        <button class="btn cookie-btn" id="accept-cookies">Ho capito</button>
+    </div>
+
+    <!-- Connection with external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

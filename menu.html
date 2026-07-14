@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μενού | Semeli Italian Cuisine</title>
+
+    <!-- Βασικά Meta Tags για SEO (Ειδικά για το Μενού) -->
+    <meta name="description" content="Ανακαλύψτε το μενού του Semeli Italian Cuisine. Λαχταριστή πίτσα, αυθεντικές μακαρονάδες, δροσερά cocktails και premium επιλογές κρασιών και ποτών στην Ηγουμενίτσα.">
+    <meta name="keywords" content="μενού, κατάλογος, ιταλικό εστιατόριο, πίτσα, μακαρονάδα, cocktails, Semeli Italian Cuisine, φαγητό">
+    <meta name="author" content="Semeli Italian Cuisine">
+
+    <!-- Open Graph Meta Tags (Για Facebook, Viber, Instagram κλπ) -->
+    <meta property="og:title" content="Το Μενού μας | Semeli Italian Cuisine">
+    <meta property="og:description" content="Δείτε αναλυτικά τα πιάτα και τα ποτά μας. Φτιαγμένα με μεράκι και αυθεντικά ιταλικά υλικά.">
+    <meta property="og:image" content="images/semeli_logo.png">
+    <meta property="og:url" content="https://www.to-domain-sou.gr/menu.html"> <!--ΤΟ DOMAIN ΜΟΥ-->
+    <meta property="og:type" content="website">
+
+    <!-- Εικονίδιο καρτέλας (Favicon) -->
+    <link rel="icon" type="image/png" href="./images/semeli_logo.png">
+
+    <!-- Σύνδεση με το αρχείο CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Κεντρικό Μενού Πλοήγησης (Navbar) -->
+    <header class="navbar">
+        <!-- Το Hamburger Icon (3 γραμμές) -->
+        <div class="hamburger" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="logo">
+            <img src="images/semeli_logo.png" alt="Semeli Logo" class="nav-logo-img">
+            <h1>Semeli Italian Cuisine</h1>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Αρχική</a></li>
+                <li><a href="menu.html">Μενού</a></li>
+                <li><a href="contact.html">Επικοινωνία</a></li>
+                <li class="lang-dropdown">
+                    <a href="#" class="dropbtn"><i class="fas fa-globe"></i> EL <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="menu.html"><img src="https://flagcdn.com/w20/gr.png" alt="Greek Flag" class="flag-icon"> Ελληνικά (EL)</a>
+                        <a href="menu-en.html"><img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" class="flag-icon"> English (EN)</a>
+                        <a href="menu-it.html"><img src="https://flagcdn.com/w20/it.png" alt="Italian Flag" class="flag-icon"> Italiano (IT)</a>
+                    </div>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!-- ========================================== -->
+    <!-- ΕΝΟΤΗΤΑ ΜΕΝΟΥ (ΦΑΓΗΤΟ & ΠΟΤΟ)              -->
+    <!-- ========================================== -->
+    <section class="menu-page-content">
+
+        <h2 class="section-title">Το Μενού Μας</h2>
+
+        <!-- Κουμπιά Επιλογής (Tabs) -->
+        <div class="menu-tabs">
+            <button class="tab-btn active" onclick="openMenu('food', event)">MENU ΦΑΓΗΤΟΥ</button>
+            <button class="tab-btn" onclick="openMenu('drinks', event)">MENU ΠΟΤΩΝ</button>
+        </div>
+
+        <!-- 1. ΜΕΝΟΥ ΦΑΓΗΤΟΥ -->
+        <div id="food" class="menu-wrapper active-menu">
+            <div class="menu-grid">
+
+                <!-- Κατηγορία: ANTIPASTI -->
+                <div class="menu-category">
+                    <h3>ANTIPASTI</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Bruschetta Pesto</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                        <p>μοτσαρέλα, πέστο, ντοματίνια</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Bruschetta Pomodoro</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                        <p>ντομάτα, σκόρδο, μαϊντανό</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Funghi al Vino Bianco</h4>
+                            <span class="price">8,50€</span>
+                        </div>
+                        <p>μανιτάρι, κρασί, λεμόνι, θυμάρι</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Funghi alla Crema</h4>
+                            <span class="price">8,90€</span>
+                        </div>
+                        <p>μανιτάρια με κρέμα παρμεζάνας και μπέικον</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Patate Fritte</h4>
+                            <span class="price">4,50€</span>
+                        </div>
+                        <p>τηγανιτές πατάτες</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Patate Dolce</h4>
+                            <span class="price">5,50€</span>
+                        </div>
+                        <p>γλυκοπατάτες τηγανιτές</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Verdure alla Griglia</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>χαλούμι, ψητά λαχανικά, πέστο</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Assortimento di Formaggi e Salumi</h4>
+                            <span class="price">12,90€</span>
+                        </div>
+                        <p>προσούτο, αέρος με πιπέρι, παρμεζάνα, μανούρι, γραβιέρα, chutney τριαντάφυλλο, κριτσίνι</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Foccacia</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                        <p>φοκάτσια με ελαιόλαδο, θυμάρι, σκόρδο</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Carpaccio</h4>
+                            <span class="price">11,50€</span>
+                        </div>
+                        <p>φιλέτο μοσχάρι, παλαιωμένο βαλσάμικο, ρόκα, παρμεζάνα, κουκουνάρι</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Canelloni di Melanzane</h4>
+                            <span class="price">9,50€</span>
+                        </div>
+                        <p>ρολό μελιτζάνας με τυριά, βασιλικό και σάλτσα ντομάτας</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: INSALATA -->
+                <div class="menu-category">
+                    <h3>INSALATA</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Insalata Verde con Aceto Balsamico</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>σαλάτα μεσκλαν, ψητό μανούρι, cranberries, καρύδια, παστέλι, dressing βαλσάμικου</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Caesar con Pollo</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>κοτόπουλο ψητό, iceberg, μπέικον, κρουτόν, dressing caesars, παρμεζάνα</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Burrata di Bufala</h4>
+                            <span class="price">14,50€</span>
+                        </div>
+                        <p>βουβαλίσια μπουράτα 200 γρ., ντοματίνια, πέστο, ρόκα, παλαιωμένο βαλσάμικο</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Insalata di Passione</h4>
+                            <span class="price">11,50€</span>
+                        </div>
+                        <p>σαλάτα παντζάρι, σπανάκι, ξινομυζήθρα, καρύδι και ξινόμπλο</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Greca</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>ντοματίνια, αγγούρι, πιπεριά, κρεμμύδι πίκλα, χαρούπι, ελιά, φέτα, κάπαρη</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Caprese</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>μοτσαρέλα, ντομάτα, βασιλικός</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: PIZZA -->
+                <div class="menu-category">
+                    <h3>PIZZA</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Margarita</h4>
+                            <span class="price">9,50€</span>
+                        </div>
+                        <p>σάλτσα ντομάτας, μοτσαρέλα, βασιλικός</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pepperoni</h4>
+                            <span class="price">11,50€</span>
+                        </div>
+                        <p>σάλτσα ντομάτας, μοτσαρέλα, σαλάμι πεπερόνι, παρμεζάνα</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Speciale</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>σάλτσα ντομάτας, μοτσαρέλα, ζαμπόν, μπέικον, πεπερόνι, πιπεριά, μανιτάρια</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pesto</h4>
+                            <span class="price">12,50€</span>
+                        </div>
+                        <p>σάλτσα ντομάτας, μοτσαρέλα, bocconcini, πέστο, ντοματίνια, βασιλικός</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Semeli Tartufatta</h4>
+                            <span class="price">14,50€</span>
+                        </div>
+                        <p>κρέμα μανιταριών, μοτσαρέλα, μανιτάρια, καραμελωμένο κρεμμύδι και λάδι τρούφας</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Greca</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>σάλτσα ντομάτας, μοτσαρέλα, πιπεριά, ντομάτα, κρεμμύδι, ελιές, φέτα, ρίγανη</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Al Tonno</h4>
+                            <span class="price">12,50€</span>
+                        </div>
+                        <p>σάλτσα ντομάτας, μοτσαρέλα, καπνιστό τόνο, κρεμμύδι, ντοματίνια</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Prosciutto</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>σάλτσα ντομάτας, μοτσαρέλα, προσούτο, παρμεζάνα, ρόκα</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>BBQ Polo</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>σάλτσα ντομάτας, μοτσαρέλα, μπέικον, κοτόπουλο, καλαμπόκι, σάλτσα bbq</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Carbonara</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>κρέμα, μοτσαρέλα, μπέικον, καλαμπόκι</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Verdure</h4>
+                            <span class="price">11,50€</span>
+                        </div>
+                        <p>σάλτσα ντομάτας, μοτσαρέλα, ψητά λαχανικά</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Caprese</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>σάλτσα ντομάτας, bocconcini, φρέσκο βασιλικό, ελαιόλαδο</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Mortadella e Burrata</h4>
+                            <span class="price">16,50€</span>
+                        </div>
+                        <p>μορταδέλα, βουβαλίσια μπουράτα και φιστίκι Αιγίνης</p>
+                    </div>
+                </div>
+
+                <!-- Πρόσθετα υλικά πίτσας -->
+                <div class="menu-category pizza-extras">
+                    <h3>ΠΡΟΣΘΕΣΕ ΕΠΙΠΛΕΟΝ ΥΛΙΚΑ ΣΤΗΝ ΠΙΤΣΑ ΣΟΥ</h3>
+                    <p class="extras-list">
+                        Μανιτάρια 0,70 / Ζαμπόν 0,70 / Σαλάμι 0,70 / Μπέικον 0,70 / Πιπεριά 0,50 /
+                        Κρεμμύδι 0,50 / Καλαμπόκι 0,50 / Ντοματίνια 0,50 / Ελιές 0,50 /
+                        Prosciutto 1,50 / Τόνος 2,00 / Κοτόπουλο 1,50 / Τυρί 1,00 / Τυρί φέτα 1,00 / Burrata 8,50
+                    </p>
+                </div>
+
+                <!-- Κατηγορία: PASTA -->
+                <div class="menu-category">
+                    <h3>PASTA</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Spaghetti Ragù alla Bolognese</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>μοσχάρι ραγού με ντομάτα san marzano και λαχανικά</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Spaghetti alla Napoletana</h4>
+                            <span class="price">8,50€</span>
+                        </div>
+                        <p>σάλτσα από ντομάτα san marzano</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Spaghetti con Aglio, Olio e Peperoncino</h4>
+                            <span class="price">9,50€</span>
+                        </div>
+                        <p>σπαγγέτι με σκόρδο, ελαιόλαδο και καυτερή πιπεριά</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Penne Crema di Pancetta Affumicata</h4>
+                            <span class="price">12,50€</span>
+                        </div>
+                        <p>κοτόπουλο, κρέμα από καπνιστό μπέικον και παρμεζάνα</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Paccheri Ragù Bianco</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>μάγουλο μοσχαρίσιο μαγειρεμένο με κρέμα</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Ravioli ai Funghi e Tartufo</h4>
+                            <span class="price">14,00€</span>
+                        </div>
+                        <p>χειροποίητο ραβιόλι και κρέμα τρούφας</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Rigatoni al Forno</h4>
+                            <span class="price">11,50€</span>
+                        </div>
+                        <p>στον φούρνο με σάλτσα ντομάτας, μπέικον, πιπεριά, κρεμμυδάκι και μοτσαρέλα</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Carbonara</h4>
+                            <span class="price">11,50€</span>
+                        </div>
+                        <p>κρόκος αυγού, παρμεζάνα, και καπνιστή πανσέτα</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Papardelle con Carne</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>χοιρινό φιλέτο, πορτσίνι, σπανάκι</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Spaghetti con Gamberi</h4>
+                            <span class="price">14,50€</span>
+                        </div>
+                        <p>σάλτσα ντομάτας, μπισκ, γαρίδες</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Orzo con Gamberi</h4>
+                            <span class="price">15,50€</span>
+                        </div>
+                        <p>κριθαράκι, γαρίδες, πράσο, ντομάτα, φέτα</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Orzo con Verdure</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>κριθαράκι, ψητά λαχανικά, σάλτσα ντομάτας</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Spaghetti alla Greca</h4>
+                            <span class="price">10,50€</span>
+                        </div>
+                        <p>σάλτσα ντομάτας, πιπεριά, κρεμμύδι, ελιές, φέτα</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: RISSOTI & GNOCCHI -->
+                <div class="menu-category">
+                    <h3>RISSOTI &amp; GNOCCHI</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Gnocchi al Gorgonzola e Mela</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>κρέμα γκοργκοντζόλα, νιόκι, μήλο κομποτέ, καρύδι</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Risotto ai Funghi</h4>
+                            <span class="price">15,50€</span>
+                        </div>
+                        <p>άγρια μανιτάρια, παρμεζάνα, βούτυρο</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Risotto con Guancia di Manzo</h4>
+                            <span class="price">16,50€</span>
+                        </div>
+                        <p>μάγουλο μοσχαρίσιο μπρεζέ, κόκκινο κρασί, παρμεζάνα, βούτυρο</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: CARNE -->
+                <div class="menu-category">
+                    <h3>CARNE</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Hamburger Semeli</h4>
+                            <span class="price">12,50€</span>
+                        </div>
+                        <p>μπιφτέκι μοσχαρίσιο, τυρί cheddar, ντομάτα, μαρούλι, μπέικον, καραμελωμένα κρεμμύδια &amp; μανιτάρια, πίκλα αγγούρι, σως bbq</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pollo alla Grillia</h4>
+                            <span class="price">14,50€</span>
+                        </div>
+                        <p>φιλέτο κοτόπουλο στη σχάρα με ψητά λαχανικά</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Filetto di Maiale con Porcini</h4>
+                            <span class="price">13,50€</span>
+                        </div>
+                        <p>ψαρονέφρι, σάλτσα μανιταριών, πατάτες τηγανιτές</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tagliata di Manzo con Gremolata e Verdure Grigliate</h4>
+                            <span class="price">22,50€</span>
+                        </div>
+                        <p>μοσχάρι ταλιάτα 300 γρ., σάλτσα verde, ψητά λαχανικά</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Schnitzel με Πατάτες</h4>
+                            <span class="price">12,50€</span>
+                        </div>
+                        <p>σνίτσελ κοτόπουλο με πατάτες τηγανιτές</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Rib-eye Argentina Steak 250γρ. con Patate Dolce</h4>
+                            <span class="price">31,50€</span>
+                        </div>
+                        <p>rib-eye 250 γρ., γλυκοπατάτα, BBQ</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Filetto di Manzo con Patate Dolce</h4>
+                            <span class="price">26,50€</span>
+                        </div>
+                        <p>φιλέτο μοσχάρι 200γρ., γλυκοπατάτα, BBQ</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: MENU PER BAMBINI -->
+                <div class="menu-category">
+                    <h3>MENU PER BAMBINI</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Hamburger</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                        <p>μπιφτέκι μοσχαρίσιο, κέτσαπ, μουστάρδα</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pennettine Napolitane</h4>
+                            <span class="price">4,50€</span>
+                        </div>
+                        <p>με σάλτσα ντομάτας &amp; παρμεζάνα</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Crocchette di Pollo</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                        <p>κοτομπουκιές με πατάτες τηγανιτές</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: DOLCI -->
+                <div class="menu-category">
+                    <h3>DOLCI</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Panna Cotta</h4>
+                            <span class="price">4,50€</span>
+                        </div>
+                        <p>με φρέσκα φρούτα</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tiramisu</h4>
+                            <span class="price">5,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Affogato al Caffè con Carammello e Cioccolato</h4>
+                            <span class="price">10,00€</span>
+                        </div>
+                        <p>για 2 άτομα</p>
+                    </div>
+                </div>
+
+                <!-- Επιπλέον σημειώσεις -->
+                <div class="menu-category menu-notes">
+                    <h3>ΣΗΜΕΙΩΣΕΙΣ</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Ψωμί</h4>
+                            <span class="price">1,00€</span>
+                        </div>
+                    </div>
+
+                    <p class="notes-list">
+                        Ρωτήστε μας για τα πιάτα ημέρας.<br>
+                        Ενημερώστε μας για τυχόν αλλεργίες.<br>
+                        Pasta gluten free to order.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 2. ΜΕΝΟΥ ΠΟΤΩΝ -->
+        <div id="drinks" class="menu-wrapper" style="display: none;">
+
+            <!-- 2α. ΠΟΤΑ / ΑΝΑΨΥΚΤΙΚΑ / ΜΠΥΡΕΣ κλπ. -->
+            <div class="menu-grid">
+
+                <!-- Κατηγορία: ΑΠΕΡΙΤΙΦ -->
+                <div class="menu-category">
+                    <h3>ΑΠΕΡΙΤΙΦ</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Ούζο / Τσίπουρο</h4>
+                            <span class="price">3,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Campari</h4>
+                            <span class="price">3,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Prosecco</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Moscato d'Asti</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: COCKTAILS -->
+                <div class="menu-category">
+                    <h3>COCKTAILS</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Margarita</h4>
+                            <span class="price">9,00€</span>
+                        </div>
+                        <p>tequila, triple sec, lime juice</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Caipirinha</h4>
+                            <span class="price">9,00€</span>
+                        </div>
+                        <p>cachaca, lime, sugar</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Aperol Spritz</h4>
+                            <span class="price">7,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Negroni</h4>
+                            <span class="price">8,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Daiquiri</h4>
+                            <span class="price">9,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Mojito</h4>
+                            <span class="price">8,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Mocktail Alcohol Free</h4>
+                            <span class="price">6,50€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΑΝΑΨΥΚΤΙΚΑ -->
+                <div class="menu-category">
+                    <h3>ΑΝΑΨΥΚΤΙΚΑ</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Coca Cola / Coca Cola Zero</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Πορτοκαλάδα</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Λεμονάδα</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Sprite</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Water Soda</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pink Soda</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tonic Water</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Ανθρακούχο Νερό</h4>
+                            <span class="price">3,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Χυμοί σε Ποτήρι</h4>
+                            <span class="price">3,50€</span>
+                        </div>
+                        <p>βύσσινο, ανάμεικτος</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Φυσικό Μεταλλικό Νερό 0,50L</h4>
+                            <span class="price">0,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Φυσικό Μεταλλικό Νερό 1L</h4>
+                            <span class="price">1,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Pelegrino 0,75L</h4>
+                            <span class="price">4,50€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΜΠΥΡΕΣ ΣΕ ΒΑΡΕΛΙ -->
+                <div class="menu-category">
+                    <h3>ΜΠΥΡΕΣ ΣΕ ΒΑΡΕΛΙ</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Alfa</h4>
+                            <span class="price">3,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Heineken</h4>
+                            <span class="price">4,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΦΙΑΛΕΣ -->
+                <div class="menu-category">
+                    <h3>ΦΙΑΛΕΣ</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Amstel</h4>
+                            <span class="price">3,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Αλφα Weiss</h4>
+                            <span class="price">5,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Amstel Radler Lemon</h4>
+                            <span class="price">3,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Amstel Free</h4>
+                            <span class="price">3,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Mamos</h4>
+                            <span class="price">4,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Peroni</h4>
+                            <span class="price">5,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Fischer</h4>
+                            <span class="price">5,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΛΙΚΕΡ -->
+                <div class="menu-category">
+                    <h3>ΛΙΚΕΡ</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Amaretto</h4>
+                            <span class="price">6,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Averna Amaro</h4>
+                            <span class="price">5,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Ramazzoti</h4>
+                            <span class="price">5,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Mastiha</h4>
+                            <span class="price">4,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Limoncello</h4>
+                            <span class="price">4,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Long Drinks</h4>
+                            <span class="price">7,50€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΟΥΙΣΚΙ -->
+                <div class="menu-category">
+                    <h3>ΟΥΙΣΚΙ</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Jameson</h4>
+                            <span class="price">7,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Johnnie Walker Red</h4>
+                            <span class="price">7,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Haig</h4>
+                            <span class="price">7,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΟΥΙΣΚΙ ΣΠΕΣΙΑΛ -->
+                <div class="menu-category">
+                    <h3>ΟΥΙΣΚΙ ΣΠΕΣΙΑΛ</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Chivas</h4>
+                            <span class="price">8,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Johnnie Walker Black</h4>
+                            <span class="price">8,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Lagavulin</h4>
+                            <span class="price">14,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΤΖΙΝ -->
+                <div class="menu-category">
+                    <h3>ΤΖΙΝ</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Beefeater</h4>
+                            <span class="price">7,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tanqueray</h4>
+                            <span class="price">8,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΒΟΤΚΑ -->
+                <div class="menu-category">
+                    <h3>ΒΟΤΚΑ</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Absolut</h4>
+                            <span class="price">7,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Belvedere</h4>
+                            <span class="price">12,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΤΕΚΙΛΑ -->
+                <div class="menu-category">
+                    <h3>ΤΕΚΙΛΑ</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Olmega Λευκή / Κίτρινη</h4>
+                            <span class="price">6,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΡΟΥΜΙ -->
+                <div class="menu-category">
+                    <h3>ΡΟΥΜΙ</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Havana Reserva</h4>
+                            <span class="price">7,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Havana 3</h4>
+                            <span class="price">6,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Don Papa Rum</h4>
+                            <span class="price">12,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΚΑΦΕΔΕΣ -->
+                <div class="menu-category">
+                    <h3>ΚΑΦΕΔΕΣ</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Espresso</h4>
+                            <span class="price">2,50€</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Τέλος 2α -->
+
+            <!-- Διαχωριστική γραμμή -->
+            <div class="menu-section-divider"></div>
+
+            <!-- 2β. WINE LIST -->
+            <div class="menu-grid wine-list-grid">
+
+                <!-- Κατηγορία: ΚΡΑΣΙΑ ΣΕ ΠΟΤΗΡΙ -->
+                <div class="menu-category wine-by-glass">
+                    <h3>ΚΡΑΣΙΑ ΣΕ ΠΟΤΗΡΙ</h3>
+                    <p class="wine-columns-note">τιμή ποτήρι 150ml / φιάλη 750ml</p>
+
+                    <h4 class="wine-subtitle">Λευκοί Οίνοι</h4>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Γέφυρα, Οινοποιείο Λύκος</h4>
+                            <span class="price">4,50€ / 19,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Γιορτή, Κτήμα Σεμέλη</h4>
+                            <span class="price">4,50€ / 19,50€</span>
+                        </div>
+                        <p>100% μοσχοφίλερο</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Gitane, Μαλαγουζιά</h4>
+                            <span class="price">6,50€ / 28,00€</span>
+                        </div>
+                        <p>100% μαλαγουζιά</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Λαζαρίδης, Χρυσός Λέων</h4>
+                            <span class="price">6,50€ / 29,00€</span>
+                        </div>
+                        <p>100% chardonnay</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Ορειβάτης, Sauvignon Blanc</h4>
+                            <span class="price">6,50€ / 28,00€</span>
+                        </div>
+                        <p>sauvignon blanc</p>
+                    </div>
+
+                    <h4 class="wine-subtitle">Ερυθροί Οίνοι</h4>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Γέφυρα, Οινοποιείο Λύκος</h4>
+                            <span class="price">4,80€ / 19,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Πόρτες, Κτήμα Σκούρα</h4>
+                            <span class="price">6,50€ / 32,00€</span>
+                        </div>
+                        <p>merlot</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Λαζαρίδης, Χρυσός Λέων</h4>
+                            <span class="price">6,50€ / 33,00€</span>
+                        </div>
+                        <p>cabernet sauvignon</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Παράγκα, Κτήμα Κυρ Γιάννης</h4>
+                            <span class="price">6,00€ / 28,00€</span>
+                        </div>
+                        <p>merlot, syrah, ξινόμαυρο</p>
+                    </div>
+
+                    <h4 class="wine-subtitle">Ροζέ Οίνοι</h4>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Ροζέ Ημίγλυκο (Τυρνάβου)</h4>
+                            <span class="price">4,50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Σημείο Στίξης, Μπουτάρης</h4>
+                            <span class="price">6,50€ / 34,00€</span>
+                        </div>
+                        <p>cabernet sauvignon - μοσχοφίλερο</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Τέλος 2β: κρασιά διαθέσιμα σε ποτήρι + φιάλη -->
+
+            <!-- Διαχωριστική γραμμή -->
+            <div class="menu-section-divider menu-section-divider-thin"></div>
+
+            <!-- 2γ. ΚΡΑΣΙΑ ΜΟΝΟ ΣΕ ΦΙΑΛΗ 750ML -->
+            <div class="menu-grid wine-list-grid">
+
+                <!-- Κατηγορία: ΛΕΥΚΟΙ ΟΙΝΟΙ (ΦΙΑΛΗ 750ML) -->
+                <div class="menu-category">
+                    <h3>ΛΕΥΚΟΙ ΟΙΝΟΙ <span class="wine-bottle-note">φιάλη 750ml</span></h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Παράγκα, Κτήμα Κυρ Γιάννης</h4>
+                            <span class="price">28,50€</span>
+                        </div>
+                        <p>ροδίτης, μαλαγουζιά</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Κτήμα Μέγα Σπήλαιο</h4>
+                            <span class="price">32,00€</span>
+                        </div>
+                        <p>ασσύρτικο</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Κτήμα Τέχνη Οίνου, Ήδυσμα Δρυός</h4>
+                            <span class="price">44,00€</span>
+                        </div>
+                        <p>chardonnay βαρέλι</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Κτήμα Καριπίδης, Sauvignon Blanc</h4>
+                            <span class="price">34,00€</span>
+                        </div>
+                        <p>sauvignon blanc</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Κτήμα Κυρ Γιάννης</h4>
+                            <span class="price">28,00€</span>
+                        </div>
+                        <p>μαλαγουζιά-ροδίτης</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Κτήμα Βιβλία Χώρα</h4>
+                            <span class="price">36,00€</span>
+                        </div>
+                        <p>sauvignon blanc-ασσύρτικο</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Κτήμα Γεροβασιλείου</h4>
+                            <span class="price">58,00€</span>
+                        </div>
+                        <p>viogner</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΕΡΥΘΡΟΙ ΟΙΝΟΙ (ΦΙΑΛΗ 750ML) -->
+                <div class="menu-category">
+                    <h3>ΕΡΥΘΡΟΙ ΟΙΝΟΙ <span class="wine-bottle-note">φιάλη 750ml</span></h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Κράτιστος, Οινοποιείο Λύκος</h4>
+                            <span class="price">32,50€</span>
+                        </div>
+                        <p>αγιωργίτικο</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Κτήμα Άλφα, Ξινόμαυρο</h4>
+                            <span class="price">36,00€</span>
+                        </div>
+                        <p>ξινόμαυρο</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Κτήμα Γεροβασιλείου</h4>
+                            <span class="price">39,00€</span>
+                        </div>
+                        <p>merlot, syrah, λημνιό</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Κοκκινόμυλος, Κτήμα Τσέλεπου</h4>
+                            <span class="price">59,00€</span>
+                        </div>
+                        <p>merlot</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Καρυπίδης, Rilancio</h4>
+                            <span class="price">39,00€</span>
+                        </div>
+                        <p>nebbiolo</p>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΑΦΡΩΔΕΙΣ ΟΙΝΟΙ -->
+                <div class="menu-category">
+                    <h3>ΑΦΡΩΔΕΙΣ ΟΙΝΟΙ</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Prosecco</h4>
+                            <span class="price">28,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Champagne Moët &amp; Chandon</h4>
+                            <span class="price">120,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Κατηγορία: ΡΟΖΕ ΟΙΝΟΙ (ΦΙΑΛΗ 750ML) -->
+                <div class="menu-category">
+                    <h3>ΡΟΖΕ ΟΙΝΟΙ <span class="wine-bottle-note">φιάλη 750ml</span></h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Δάφνιος Δουλουφάκης</h4>
+                            <span class="price">29,00€</span>
+                        </div>
+                        <p>λιάτικο, βιδιανό</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>La Tour Melas Nautilus</h4>
+                            <span class="price">32,00€</span>
+                        </div>
+                        <p>syrah-grenache rouge-αγιωργίτικο</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Domaine Costa Lazaridis Rose</h4>
+                            <span class="price">39,00€</span>
+                        </div>
+                        <p>grenache rouge-merlot-αγιωργίτικο</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    </main>
+
+
+    <!-- Footer (Υποσέλιδο) -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>ΔΙΕΥΘΥΝΣΗ</h3>
+                <p>Ελ. Βενιζέλου 4,<br>Ηγουμενίτσα 461 00</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Semeli+Italian+Cuisine+Igoumenitsa" target="_blank" class="map-link">
+                    <i class="fas fa-map-marker-alt"></i> Δείτε στον χάρτη
+                </a>
+            </div>
+            <div class="footer-column">
+                <h3>ΤΗΛΕΦΩΝΟ ΕΠΙΚΟΙΝΩΝΙΑΣ</h3>
+                <p><a href="tel:+302665028102" style="text-decoration: none;">+30 2665 028102</a></p>
+                <p><a href="tel:+306941442862" style="text-decoration: none;">+30 6941442862</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>EMAIL</h3>
+                <p><a href="mailto:info@semeli-winebar.gr" style="text-decoration: none;">info@semeli-winebar.gr</a></p>
+            </div>
+            <div class="footer-column tripadvisor">
+                <h3>TRIPADVISOR</h3>
+                <div class="ta-logo-box">
+                    <a href="https://www.tripadvisor.com.gr/Restaurant_Review-g735758-d12672404-Reviews-Semeli_Italian_Cuisine-Igoumenitsa_Thesprotia_Region_Epirus.html" target="_blank">
+                        <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="Tripadvisor">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column social">
+                <h3>FOLLOW US</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/semeliigoumenitsa/?locale=el_GR" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/semeli_italian_cuisine/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Semeli Italian Cuisine</p>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner (GDPR) -->
+    <div class="cookie-banner" id="cookie-banner">
+        <p>Αυτή η ιστοσελίδα χρησιμοποιεί cookies για να βελτιώσει την εμπειρία σας.</p>
+        <button class="btn cookie-btn" id="accept-cookies">Κατανοητό</button>
+    </div>
+
+    <!-- Σύνδεση με το εξωτερικό αρχείο JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
